@@ -1,7 +1,6 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.config.from_object(__name__)
 
 @app.route('/')
 def home_page():
@@ -28,7 +27,7 @@ def Ans():
         else:
             result = 'Error!'
         output = result
-        return render_template('result.html', output=output)
+    return render_template('result.html', output=output)
 
 
 if __name__ == '__main__':
