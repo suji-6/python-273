@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator | Noxzyous</title>
+    </head>
+
+    <body align="center" style="background-image: url(/static/anime-art.png);" >
+        <br><br><br>
+        <div style="width: 100%; height: 100%; display: flex; margin: 0;">
+        <div style="width: 35%;"></div>
+        <div align="middle" style="width: 40%; color: white; background-color: rgb(79, 25, 165); color: hsl(181, 91%, 54%); border: 3px solid hsl(36, 71%, 85%);">
+        <br><br>
+        <div align="middle" style="background-color: white;"><h1>Simple Calculator</h1></div>
+        <form action="/result"method="post">
+            <div align="center">
+                <label style="color: rgb(254, 255, 255);"><b>Number 1</b></label>
+                <input type="number" id="num1" name="num1" placeholder="Enter a value">
+            </div>
+            <br><br>
+            <div align="center">
+                <label style="color: white;"><b>Number 2</b></label>
+                <input type="number" id="num2" name="num2" placeholder="Enter a value">
+            </div>
+            <br><br>
+
+            <div>
+                <input type="radio" id="Addition" name="yor_job" value="Addition">
+                <label for="Addition">Addition</label>
+                <input type="radio" id="Subtraction" name="yor_job" value="Subtraction">
+                <label for="Subtraction">Subtraction</label>
+                <input type="radio" id="Multiplication" name="yor_job" value="Multiplication">
+                <label for="Multiplication">Multiplication</label>
+                <input type="radio" id="Division" name="yor_job" value="Division">
+                <label for="Division">Division</label>
+            </div>
+            <br><br>
+            <div align="middle style="padding: 1px 1px 1px 150px;"><input type="submit" value="Do math" style="border: 2px solid white;"</div>
+            <br><br>
+            </form>
+        </div>
+            <div style="width: 35%;"></div>
+    </div>
+    </body>
+</html>
